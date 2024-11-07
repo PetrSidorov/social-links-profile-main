@@ -1,4 +1,63 @@
-* {
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --white: #ffffff;
+  --green: #c4f82a;
+  --spacing-40: 40px;
+  --spacing-24: 24px;
+  --spacing-16: 16px;
+  --spacing-12: 12px;
+  --spacing-8: 8px;
+  --spacing-4: 4px;
+  --text-preset-1: 24px;
+  --text-preset-2: 14px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+p,
+a,
+img {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: "Inter";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -17,6 +76,19 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--spacing-16);
+
+  li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--white);
+    background-color: var(--grey-700);
+    width: 304px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+  }
 }
 
 .card-img {
