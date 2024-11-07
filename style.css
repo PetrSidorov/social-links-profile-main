@@ -10,6 +10,8 @@
   --spacing-12: 12px;
   --spacing-8: 8px;
   --spacing-4: 4px;
+  /* --text-preset-1: 24px;
+  --text-preset-2: 14px; */
   --font-display: swap;
   --line-height: 150%;
   --letter-spacing: 0;
@@ -122,6 +124,7 @@ p {
   padding-bottom: var(--spacing-12);
   border-radius: var(--spacing-8);
   display: block;
+  /* transition: background-color 600ms ease; */
   transition: background-color 600ms ease-in;
 }
 
@@ -129,7 +132,6 @@ p {
   background-color: var(--green);
   transition: ease-in-out;
   color: var(--grey-900);
-  transition: background-color 400ms ease-in;
 }
 
 .links {
