@@ -10,8 +10,6 @@
   --spacing-12: 12px;
   --spacing-8: 8px;
   --spacing-4: 4px;
-  /* --text-preset-1: 24px;
-  --text-preset-2: 14px; */
   --font-display: swap;
   --line-height: 150%;
   --letter-spacing: 0;
@@ -117,10 +115,21 @@ p {
   }
 }
 
+.list-item {
+  background-color: var(--grey-700);
+  width: 100%;
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-12);
+  border-radius: var(--spacing-8);
+  display: block;
+  transition: background-color 600ms ease-in;
+}
+
 .list-item:hover {
   background-color: var(--green);
   transition: ease-in-out;
   color: var(--grey-900);
+  transition: background-color 400ms ease-in;
 }
 
 .links {
@@ -129,15 +138,6 @@ p {
   align-items: center;
   gap: var(--spacing-16);
   width: 100%;
-
-  li {
-    display: block;
-    background-color: var(--grey-700);
-    width: 100%;
-    padding-top: var(--spacing-12);
-    padding-bottom: var(--spacing-12);
-    border-radius: var(--spacing-8);
-  }
 }
 
 .card-img {
