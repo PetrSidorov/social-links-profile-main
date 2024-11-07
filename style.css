@@ -33,7 +33,8 @@
 h1,
 p,
 a,
-img {
+img,
+figure {
   margin: 0;
 }
 
@@ -53,6 +54,7 @@ html {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 *,
@@ -67,9 +69,32 @@ p {
 }
 
 .card {
+  background-color: var(--grey-800);
+  max-width: 384px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--spacing-40);
+  color: var(--white);
+
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: var(--spacing-4);
+  }
+
+  .city {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #c4f82a;
+  }
+}
+
+.card-img {
+  margin-bottom: var(--spacing-24);
 }
 
 .links {
@@ -82,7 +107,6 @@ p {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
-    color: var(--white);
     background-color: var(--grey-700);
     width: 304px;
     height: 45px;
@@ -95,4 +119,12 @@ p {
   width: 100%;
   max-width: 88px;
   border-radius: 100%;
+}
+
+body {
+  background-color: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
